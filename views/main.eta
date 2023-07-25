@@ -1,0 +1,12 @@
+<% layout("./layouts/layout.eta") %>
+<h1>Shared shopping lists</h1>
+<h2 style="color:Black">Statistics:</h2>
+<ul style="list-style-type: none;">
+<li>
+<h3>Shopping lists: <%=it.listCount%></h3> </br>
+<h3>Shopping list items: <%=it.itemCount%></h3>
+</li>
+</ul>
+<form method="GET" action="/lists">
+<input type="submit" value="Lists">
+</form>
